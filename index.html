@@ -1,127 +1,71 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="JOEFEL LATO — Programmer and Developer portfolio">
-<title>JOEFEL. | Programmer & Developer</title>
-<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joefel Lato | Computer Science • Cybersecurity • AI • Technology</title>
+<meta name="description" content="Joefel Lato is a Computer Science enthusiast and technology builder exploring cybersecurity, AI, full-stack development, IoT, software engineering, and intelligent commerce.">
+<link rel="canonical" href="https://joefellato215-dev.github.io/">
+<meta property="og:title" content="Joefel Lato | Computer Science • Cybersecurity • AI • Technology">
+<meta property="og:description" content="Computer Science building cybersecurity, AI, web and IoT systems.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://joefellato215-dev.github.io/">
+<meta property="og:site_name" content="Joefel Lato Portfolio">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Joefel Lato | Computer Science • Cybersecurity • AI • Technology">
+<meta name="twitter:description" content="A technical portfolio exploring cybersecurity, AI, full-stack development, IoT, algorithms, and intelligent commerce.">
+<meta name="theme-color" content="#050509">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Joefel Lato","url":"https://joefellato215-dev.github.io/","sameAs":["https://github.com/joefellato215-dev"],"jobTitle":"Technology Builder","knowsAbout":["Cybersecurity","Artificial Intelligence","Web Development","Software Engineering","Internet of Things","Algorithms","E-commerce"]}</script>
+<script type="module" src="/src/main.js"></script>
 </head>
 <body>
-<div class="glow"></div>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><a class="brand" href="#home">JOEFEL LATO</a>
+<button class="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+<nav id="menu" aria-label="Primary"><a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#algorithm">Algorithms</a><a href="#security">Security</a><a href="#journey">Journey</a><a href="#contact">Contact</a></nav></header>
+<main id="main">
+<section id="home" class="hero"><canvas id="scene" aria-hidden="true"></canvas>
+<div class="hero-copy">
+<div class="system-status" aria-label="Portfolio system status">
+<span class="status-dot" aria-hidden="true"></span>
+<span>SYSTEM ONLINE</span>
+<span class="status-separator">//</span>
+<span>AI • CYBER • IOT</span>
+</div>
+<h1>JOEFEL LATO</h1>
+<p class="sub">Computer Science • Cybersecurity • AI • Technology</p>
+<p class="quote">I don't wait for opportunity. I build it.</p>
+<p class="lede">Technology builder focused on building practical technology across cybersecurity, artificial intelligence, web development, IoT, and intelligent software systems.</p>
+<div class="cta"><a class="btn primary" href="#projects">Explore My Work</a><a class="btn" href="https://github.com/joefellato215-dev" target="_blank" rel="noopener noreferrer">View GitHub</a><a class="btn" href="#contact">Contact Me</a></div></div></section>
 
-<header>
-  <a class="logo" href="#home">JOEFEL<span>.</span></a>
-  <nav class="desktop">
-    <a href="#home">Home</a><a href="#about">About</a><a href="#education">Education</a>
-    <a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
-  </nav>
-  <div class="actions">
-    <button id="themeBtn" class="icon" aria-label="Toggle theme">☾</button>
-    <button id="menuBtn" class="menu" aria-label="Open menu"><i></i><i></i><i></i></button>
-  </div>
-</header>
+<section id="about" class="wrap"><h2>About</h2>
+<p>I am Joefel Lato, a Computer Science enthusiast interested in cybersecurity, artificial intelligence, software engineering, web development, and IoT. I enjoy turning ideas into working systems.</p>
+<p class="loop">Learning → Building → Testing → Improving → Deploying</p></section>
 
-<nav id="mobileNav" class="mobile">
-  <a href="#home">Home</a><a href="#about">About</a><a href="#education">Education</a>
-  <a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
-</nav>
+<section id="projects" class="wrap"><h2>Projects</h2><div id="project-grid" class="grid"></div></section>
 
-<main>
-<section id="home" class="hero">
-  <div class="heroText">
-    <div class="eyebrow"><b></b> SYSTEM ONLINE</div>
-    <small class="index">01 / HOME</small>
-    <h1>Building ideas<br><span>into reality.</span></h1>
-    <p>I'm <strong>JOEFEL LATO</strong>, a programmer and developer interested in useful software, futuristic interfaces, AI, automation and IoT.</p>
-    <div class="buttons"><a class="btn primary" href="#projects">VIEW PROJECTS ↗</a><a class="btn" href="#contact">CONTACT ME →</a></div>
-    <div class="stats"><div><b>WEB</b><small>DEVELOPMENT</small></div><div><b>PY</b><small>PYTHON</small></div><div><b>AI</b><small>EXPERIMENTS</small></div></div>
-  </div>
-  <div class="aiScene" aria-hidden="true">
-    <div class="rings"></div><div class="orbit a"></div><div class="orbit b"></div>
-    <div class="robot">
-      <div class="head"><span class="eye left"></span><span class="eye right"></span><span class="nose"></span><span class="mouth"></span></div>
-      <div class="neck"></div><div class="shoulders"></div>
-    </div>
-    <div class="grid"></div><label class="hud one">AI_CORE // 01</label>
-    <label class="hud two">NEURAL LINK: <em>ACTIVE</em></label>
-  </div>
-</section>
+<section id="algorithm" class="wrap"><h2>Shortest path, visualised</h2>
+<p>Dijkstra-style search on a weighted graph. Tap a node to choose the destination, then run it.</p>
+<canvas id="graph" width="640" height="320" role="img" aria-label="Weighted graph showing Dijkstra shortest path search"></canvas>
+<div class="cta"><button class="btn primary" id="run-path">Run search</button><span id="path-out" role="status"></span></div></section>
 
-<section id="about" class="section">
-  <small class="index">02 / ABOUT</small>
-  <div class="heading"><h2>About <span>me.</span></h2><p>Developer mindset. Builder attitude.</p></div>
-  <div class="two">
-    <article class="card"><small>PROFILE DATA</small>
-      <div class="row"><span>NAME</span><b>JOEFEL LATO</b></div>
-      <div class="row"><span>ROLE</span><b>Programmer / Developer</b></div>
-      <div class="row"><span>EDUCATION</span><b>Bachelor in Computer Science</b></div>
-      <div class="row"><span>LOCATION</span><b>Philippines</b></div>
-      <div class="row"><span>FOCUS</span><b>Web • Python • AI • IoT</b></div>
-    </article>
-    <article class="card about"><small>MISSION</small><h3>Turning concepts into working systems.</h3>
-      <p>I enjoy creating web applications, Python tools, AI experiments, automation projects, databases and connected-device concepts.</p>
-      <p>This portfolio is built as a futuristic command center with responsive design and interactive JavaScript.</p>
-    </article>
-  </div>
-</section>
+<section id="security" class="wrap"><h2>Security architecture</h2>
+<p>A simplified request path. Each layer is a place where defence is applied.</p>
+<ol class="pipe" aria-label="Internet, Firewall, Server, Application, Database">
+<li>Internet</li><li>Firewall</li><li>Server</li><li>Application</li><li>Database</li><i class="packet" aria-hidden="true"></i></ol></section>
 
-<section id="education" class="section">
-  <small class="index">03 / EDUCATION</small>
-  <div class="heading"><h2>Education <span>timeline.</span></h2><p>Learning path and milestones.</p></div>
-  <div class="timeline">
-    <article><b>2009</b><div><h3>Carmen Central Elementary School</h3><p>Graduated: 2015</p></div></article>
-    <article><b>2021 — 2022</b><div><h3>Massachusetts Institute of Tecnology</h3><p>Bachelor in Computer Science</p></div></article>
-    <article><b>2023</b><div><h3>CyberSecurity</h3><p>Certification / training</p></div></article>
-  </div>
-</section>
+<section id="journey" class="wrap"><h2>Building journey</h2>
+<ol class="steps"><li>Computer Science</li><li>Web Development</li><li>Cybersecurity</li><li>Artificial Intelligence</li><li>IoT &amp; ESP32</li><li>Full-Stack Systems</li><li>Intelligent Commerce</li><li>Future Technology</li></ol>
+<p class="loop">Learn. Build. Break. Fix. Improve.</p></section>
 
-<section id="projects" class="section">
-  <small class="index">04 / SELECTED WORK</small>
-  <div class="heading"><h2>Projects <span>lab.</span></h2><p>Programming projects and experiments.</p></div>
-  <div class="projects">
-    <article class="project"><div class="visual web">&lt;/&gt;<i>01</i></div><div class="pbody"><small>HTML / CSS / JS</small><h3>Portfolio Website</h3><p>Responsive personal portfolio with a futuristic interface, animations and mobile navigation.</p><a href="#contact">OPEN PROJECT ↗</a></div></article>
-    <article class="project"><div class="visual ai">◉<i>02</i></div><div class="pbody"><small>PYTHON / AI / FLASK</small><h3>Oculus AI</h3><p>Personal AI assistant concept with memory, tools, voice, knowledge systems and a dashboard.</p><a href="#contact">OPEN PROJECT ↗</a></div></article>
-    <article class="project"><div class="visual math">∑<i>03</i></div><div class="pbody"><small>PYTHON / MATH</small><h3>Scientific Calculator</h3><p>Calculator concept for scientific expressions, mathematics and interactive calculations.</p><a href="#contact">OPEN PROJECT ↗</a></div></article>
-    <article class="project"><div class="visual iot">⌁<i>04</i></div><div class="pbody"><small>ESP32 / IOT / WEB</small><h3>ESP32 Smart Home</h3><p>IoT concept for controlling lights and sensors from an Android phone through an ESP32.</p><a href="#contact">OPEN PROJECT ↗</a></div></article>
-  </div>
-</section>
-
-<section id="skills" class="section">
-  <small class="index">05 / SKILLS</small>
-  <div class="heading"><h2>Technical <span>skills.</span></h2><p>Technologies and tools used while learning and building.</p></div>
-  <div class="skillGrid"><div>
-    <div class="skill"><span>HTML / CSS <b>92%</b></span><i style="--w:92%"></i></div>
-    <div class="skill"><span>Python <b>90%</b></span><i style="--w:90%"></i></div>
-    <div class="skill"><span>JavaScript <b>78%</b></span><i style="--w:78%"></i></div>
-    <div class="skill"><span>Flask <b>75%</b></span><i style="--w:75%"></i></div>
-    <div class="skill"><span>Git / GitHub <b>72%</b></span><i style="--w:72%"></i></div>
-  </div>
-  <pre class="terminal">$ whoami
-JOEFEL LATO
-
-$ stack --active
-HTML  CSS  JS
-PYTHON  FLASK
-GIT  ESP32
-
-$ status
-<span>ALL SYSTEMS READY</span></pre></div>
-</section>
-
-<section id="contact" class="section contact">
-  <small class="index">06 / CONTACT</small>
-  <div class="heading"><h2>Let's build <span>something.</span></h2><p>Have an idea, project or experiment? Start a conversation.</p></div>
-  <div class="two">
-    <article class="card"><small>CONTACT CHANNEL</small><h3>JOEFEL LATO</h3><p>Programmer / Developer</p>
-      <div class="links"><a href="mailto:joefellato215@gmail.com">✉ Email</a><a href="https://github.com/joefellato215-dev" target="_blank">◉ GitHub</a></div>
-    </article>
-    <form class="card" id="form"><input id="name" placeholder="Your name" required><input id="email" type="email" placeholder="Your email" required><textarea id="message" rows="5" placeholder="Your message" required></textarea><button class="btn primary">SEND MESSAGE ↗</button><small id="note"></small></form>
-  </div>
-</section>
+<section id="contact" class="wrap"><h2>Let's build something</h2>
+<p>Have an idea, project, or technology challenge? Let's turn it into something real.</p>
+<form id="form" novalidate>
+<label>Name<input name="name" autocomplete="name" required minlength="2"></label>
+<label>Email<input name="email" type="email" autocomplete="email" required></label>
+<label>Message<textarea name="message" rows="4" required minlength="10"></textarea></label>
+<p id="form-msg" role="alert"></p><button class="btn primary">Prepare message</button></form>
+<p class="links"><a href="https://github.com/joefellato215-dev" target="_blank" rel="noopener noreferrer">GitHub</a> · LinkedIn: coming soon · Email: coming soon</p></section>
 </main>
-
-<footer>© <span id="year"></span> JOEFEL LATO <span>BUILT WITH HTML • CSS • JAVASCRIPT</span></footer>
-<button id="top" class="top">↑</button>
-<script src="script.js"></script>
+<footer><strong>JOEFEL LATO</strong><p>Technology • Cybersecurity • AI • Engineering</p><p>"I don't wait for opportunity. I build it."</p><p>© <span id="yr"></span> Joefel Lato</p></footer>
 </body></html>
